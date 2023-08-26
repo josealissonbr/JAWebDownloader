@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', '\App\Http\Controllers\Web\HomeController@home')->name('home');
+
+Route::get('/get-youtube-dl', '\App\Http\Controllers\Scrap\YoutubeController@getYoutubeDl')->name('scrap.youtube');

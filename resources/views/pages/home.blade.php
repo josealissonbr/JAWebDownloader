@@ -23,33 +23,48 @@
         <button class="btn btn-primary w-75">COMEÇAR</button>
     </div>
 
-</div>
+    <div class="border-bottom"></div>
 
-<div class="homepage2-fifth-sec mt-24">
     <div class="container">
-        <div class="tranding-item-sec" >
-            <div class="home-tranding-first">
-                <h2 class="home-cate-title">Redes Suportadas</h2>
+        <div class="notification-page-full mt-24">
+            <h1 class="d-none">Notification Page</h1>
+
+            <div class="video-list">
+
             </div>
-            <div class="home-tranding-second">
-                <a href="#"><p class="see-all-txt">Ver tudo<span><img src="assets/images/homepage/see-all-icon.svg" alt="right-arrow"></span></p></a>
-            </div>
+
         </div>
     </div>
-    <div class="offcial-partner-home2-featured mt-16">
-        <div class="offcial-partner-home2">
-            <div class="round-shape-home2 bg-red">
-                <div>
-                    <h3 class="round-txt-home2">YT</h3>
+
+    <div class="homepage2-fifth-sec mt-24">
+        <div class="container">
+            <div class="tranding-item-sec" >
+                <div class="home-tranding-first">
+                    <h2 class="home-cate-title">Redes Suportadas</h2>
+                </div>
+                <div class="home-tranding-second">
+                    <a href="#"><p class="see-all-txt">Ver tudo<span><img src="assets/images/homepage/see-all-icon.svg" alt="right-arrow"></span></p></a>
                 </div>
             </div>
-            <div>
-                <h4 class="offcial-title-home2">Youtube</h4>
-                <h5 class="offcial-subtitle-home2">Videos & Shorts</h5>
-            </div>
         </div>
+        <div class="offcial-partner-home2-featured mt-16">
+            <div class="offcial-partner-home2">
+                <div class="round-shape-home2 bg-red">
+                    <div>
+                        <h3 class="round-txt-home2">YT</h3>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="offcial-title-home2">Youtube</h4>
+                    <h5 class="offcial-subtitle-home2">Videos & Shorts</h5>
+                </div>
+            </div>
 
+        </div>
     </div>
+
+
 </div>
+
 
 <script  src="{{asset('assets/js/pages/home.js')}}"></script>
