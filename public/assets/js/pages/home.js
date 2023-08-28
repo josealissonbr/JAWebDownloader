@@ -10,7 +10,6 @@ $('.offcial-partner-home2-featured').slick({
     arrows: false
 });
 
-
 function createVideoDownloadComponent(item){
     let videoListEl = $('.video-list');
 
@@ -33,3 +32,45 @@ function createVideoDownloadComponent(item){
     $(`[video-uuid="${uuid}"]`).hide();
     $(`[video-uuid="${uuid}"]`).fadeIn();
 }
+
+$("#video-download-form").submit(function(e) {
+    e.preventDefault();
+
+    let videoUrl = $('#video-url').val();
+
+    if(videoUrl == ''){
+        alert('Please enter video url');
+        return;
+    }
+
+    /*$.ajax({
+        url: 'https://nodetent.com/projects/mokoviralyoutube/includes/youtube.php',
+        type: 'POST',
+        data: {
+            url: videoUrl
+        },
+        success: function(response) {
+            var div = document.createElement('DIV');
+
+            div.innerHTML = response;
+
+        },
+    });*/
+
+    var form = new FormData();
+    form.append("url", "https://youtu.be/WbJNkH-pDd8");
+
+    var settings = {
+    "url": "https://nodetent.com/projects/mokoviralyoutube/includes/youtube.php",
+    "method": "POST",
+    "timeout": 0,
+    "processData": false,
+    "mimeType": "multipart/form-data",
+    "contentType": false,
+    "data": form
+    };
+
+    $.ajax(settings).done(function (response) {
+    console.log(response);
+    });
+});
