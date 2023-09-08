@@ -7,5 +7,5 @@ use Illuminate\Http\Request;
 
 class YoutubeController extends Controller
 {
-    public function getYoutubeDl()
+    public function getYoutubeDl();
 }
